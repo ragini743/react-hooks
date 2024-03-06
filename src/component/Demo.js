@@ -17,7 +17,7 @@ const Demo = () => {
   console.log("prime")
 
   return (
-    <div className={'mt-6 ml-6 border-2 border-gray-400 h-72 w-[30%] p-4 '+ (isDarkTheme&& "bg-gray-800 text-white")}>
+    <div className={'mt-6 ml-6 border-2 border-gray-400 h-72 w-[30%] p-4 inline-block '+ (isDarkTheme&& "bg-gray-800 text-white")}>
 
       <label>
         Number

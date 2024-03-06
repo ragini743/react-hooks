@@ -21,7 +21,7 @@ export const appRouter = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <div className="App relative">
     <Header />
     <RouterProvider router={appRouter} />
     </div>
