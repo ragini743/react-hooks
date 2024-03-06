@@ -11,8 +11,8 @@ const Demo = () => {
   // return  findNthPrime(text) ;
   // }
 
-
-  const  prime = useMemo(()=> findNthPrime,[text])
+// with useMemo
+  const  prime = useMemo(()=> findNthPrime(text),[text])
 
   console.log("prime")
 
@@ -23,12 +23,12 @@ const Demo = () => {
         Number
       </label>
       <div className='border-2 border-gray-500 mt-4 rounded-lg'>
-        <input type='number' value={text} onChange={(e) =>setText(e.target.value)} className='rounded-lg outline-none w-full pl-4 p-2'>
+        <input type='number' value={text} onChange={(e) =>setText(e.target.value)} className='rounded-lg outline-none w-full pl-4 p-2 text-black'>
 
         </input>
       </div>
       <div>
-        <h1 className='font-bold mt-4'> {prime()}</h1>
+        <h1 className='font-bold mt-4'> {prime}</h1>
       </div>
       <div onClick={() => setIsDarkTheme(!isDarkTheme)} className='mt-10 text-right rounded-lg'>
         <button className='bg-green-800 text-white p-1 rounded-lg'>
